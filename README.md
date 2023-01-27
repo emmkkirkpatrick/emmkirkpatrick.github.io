@@ -7,7 +7,7 @@ Projects
   
 In-Class Assignments  
 • ICA1 - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/   
-• ICA2  
+• ICA2 - file:///Users/emma/Documents/GitHub/emmkirkpatrick.github.io/wa/wa2.html 
 • ICA3  
 • ICA4  
 • ICA5  
