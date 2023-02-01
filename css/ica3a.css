@@ -22,3 +22,9 @@ body {
   p, li, dd, dt, address {
     line-height: 1.5;
   }
+
+  header {
+    height: 10%; 
+    width: 100%;
+    fill: green;
+  }
