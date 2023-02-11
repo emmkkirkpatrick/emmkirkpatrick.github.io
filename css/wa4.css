@@ -60,17 +60,17 @@ body {
   /* card setup styles */
 
 .card header, .card footer {
-    height: 30px;
-    padding: 10px;
+    height: 1.875em;
+    padding: 0.625em;
 }
 
 
 
 /* header and footer styles */
 .card h2  {
-    margin: 0px;
-    font-size: 20px;
-    height: 10px;
+    margin: 0.25em;
+    font-size: 1.75em;
+    height: 0.625em;
 }
 
 .card footer p {
