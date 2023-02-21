@@ -11,8 +11,8 @@ In-Class Assignments
 • ICA3 - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/ica/ica3a.html 
        - https://emmkkirkpatrick.github.io/emmkirkpatrick.github io/ica/ica3b.html
 • ICA4 - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/ica/ica4.html
-• ICA5  
-• ICA6  
+• ICA5 - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/ica/ica5.html
+• ICA6 - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/ica/ica6.html
 • ICA7  
 • ICA8  
 • ICA9  
@@ -27,8 +27,8 @@ Weekly Assignments
 • WA1  - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/wa/wa1.html
 • WA2  - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/wa/wa2.html
 • WA3  - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/wa/wa3.html
-• WA4  
-• WA5  
+• WA4  - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/wa/wa4.html
+• WA5  - https://emmkkirkpatrick.github.io/emmkirkpatrick.github.io/wa/wa5.html
 • WA6  
 • WA7  
 • WA8  
