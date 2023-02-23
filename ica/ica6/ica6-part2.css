@@ -1,0 +1,82 @@
+body{
+    background-color: olive;
+}
+
+
+#flex-parent{
+    display:flex;
+    background-color: orangered;
+}
+#flex-parent p{
+    padding:5vw;
+}
+
+#flex-child1{
+    order: 3;
+}
+
+#flex-child2{
+    order: 4;
+}
+
+#flex-child3{
+    order: 2;
+}
+
+#flex-child4{
+    order: 1;
+}
+
+#grid-parent{
+    display: grid;
+    grid-template-columns: 0.01fr 0.01fr 0.01fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    
+    
+
+}
+
+#grid-parent h1{
+    background-color: grey;
+    padding: 0.5em 0.8em;
+    margin: 0;
+    font-size: 2em;
+    object-fit: fill;
+
+}
+#no0{
+    
+
+}
+#no1{
+    
+}
+#no2{
+
+}
+#no3{
+
+}
+#no4{
+
+}
+#no5{
+
+}
+#no6{
+
+}
+#no7{
+
+}
+#no8{
+
+}
+
+#no9{
+
+}
