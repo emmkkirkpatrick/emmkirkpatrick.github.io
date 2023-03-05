@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav{
     height: 50vh;
@@ -18,13 +19,24 @@ nav a{
     text-decoration: none;
     color:rgb(210, 207, 207);
 }
+h1 {
+    font-size: 2em;
+    transition: font-size 4s 1s;
+}
 
+h1:hover {
+    font-size: 4em;
+}
+nav a:hover {
+    background-color: gray;
+}
 
 img{
-    width:30vw;
-    height: 30vh;
-    top: 100em;
+    max-height: 40%;
+    max-width: 40%;
+    animation: slideUp 4s 1s
 }
+
 
 #red-ball{
     background-color: rgb(177, 136, 203);
@@ -34,4 +46,15 @@ img{
     position: absolute;
     left:5vw;
     top:0;
+    transition: margin-top 1s;
+}
+
+@keyframes slideUp {
+    from {
+        margin-top: 30%;
+    }
+
+    to {
+        margin-bottom: 100%
+    }
 }
