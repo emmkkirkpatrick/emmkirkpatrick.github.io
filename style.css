@@ -64,6 +64,10 @@ div #navBox {
 
 }
 
+.container h1{
+
+}
+
 /* font formatting */
 .container h2 {
     font-family:Gill Sans;
@@ -124,6 +128,18 @@ a:link {
 
 }
 
+article {
+    position:relative;
+    font-size: 2em;
+    top: 8em;
+    margin: 2em;
+    padding: 2em;
+    color:rgb(255, 255, 255);
+    max-width: 44%;
+    text-align:justify;
+    z-index:1;
+
+}
 
 #latestWork{
     font-size: 5em;
@@ -252,6 +268,16 @@ a:link {
             text-align: center;
           }
     
+    article {
+        position:relative;
+        font-size: 2em;
+        top: 9.5em;
+        margin: 2em;
+        color:rgb(255, 255, 255);
+        text-align:justify;
+        z-index:1;
+        min-width:21em;
+    }
     #latestWork{
         justify-content: center;
         margin:1em 50px;
@@ -378,6 +404,18 @@ nav ul{
         font-size:5em;
         top:2.5em;
       }
+
+          article {
+        position:relative;
+        font-size: 2em;
+        top: 14em;
+        margin: 0em;
+        padding:0;
+        color:rgb(255, 255, 255);
+        min-width: 13em;
+        text-align:justify;
+        z-index:1;
+    
     }
 
        #latestWork{
@@ -422,7 +460,7 @@ nav ul{
         position:relative;
         top:35em;
        }
-
+}
 
 @media screen and (max-width: 800px) and (min-width:701px){
     .container {
@@ -454,6 +492,18 @@ nav ul{
         text-align: center;
         min-width:610px;
       }
+
+      article {
+        position:relative;
+        font-size: 2em;
+        top: 9.5em;
+        margin: 2em;
+        padding: 2em;
+        color:rgb(255, 255, 255);
+        min-width: 20em;
+        text-align:justify;
+        z-index:1;
+    
     }
 
     #latestWork{
@@ -520,3 +570,4 @@ nav ul{
     font-size:5em;
     top:3.5em;
   }
+}
