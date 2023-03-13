@@ -64,10 +64,6 @@ div #navBox {
 
 }
 
-.container h1{
-
-}
-
 /* font formatting */
 .container h2 {
     font-family:Gill Sans;
@@ -426,7 +422,7 @@ nav ul{
         position:relative;
         top:35em;
        }
-}
+
 
 @media screen and (max-width: 800px) and (min-width:701px){
     .container {
@@ -524,4 +520,3 @@ nav ul{
     font-size:5em;
     top:3.5em;
   }
-}
