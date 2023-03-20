@@ -83,20 +83,20 @@ div #navBox {
 
 h2 {
     margin:0.5em;
-    color:rgb(155, 155, 155);
+    color:rgb(119, 119, 119);
     display:flex;
  
 }
 
 /* link formatting */
 a {
-    color:rgb(155, 155, 155);
+    color:rgb(119, 119, 119);
     text-decoration: none;
 
 }
 /* unvisited link */
 a:link {
-    color: rgb(246, 246, 246);
+    color: rgb(119, 119, 119);
   }
   
   /* mouse over link */
