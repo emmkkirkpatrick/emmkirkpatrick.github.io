@@ -23,7 +23,7 @@ p {
     z-index: 99;
     background-color: rgb(255, 251, 246);
     vertical-align:middle;
-    min-width:700px;
+    /* min-width:700px; */
 }
 
 
@@ -62,10 +62,6 @@ div #navBox {
     left:-2;
     height:4em;
 
-
-}
-
-.container h1{
 
 }
 
@@ -277,19 +273,13 @@ button {
     /* display:block; */
 
 }
+.msgBox
 
 .msgBox p {
     font-size: 1em;
     
 }
 
-.msgBox button {
-    /* z-index: 99; */
-}
-
-
-
-msg
 /* screen sizing */
 
 @media screen and (min-width: 800px){
@@ -390,7 +380,7 @@ msg
 
    #latest {
     position:relative;
-    top:25.5em;
+    top:48.5em;
    }
 }
 

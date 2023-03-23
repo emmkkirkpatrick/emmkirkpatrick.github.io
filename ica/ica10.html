@@ -2,60 +2,87 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Function start</title>
-    <style>
-      .msgBox {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        width: 200px;
-        background: #eee;
-      }
-
-      .msgBox p {
-        line-height: 1.5;
-        padding: 10px 20px;
-        color: #333;
-      }
-
-      .msgBox button {
-        background: none;
-        border: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 1.1rem;
-        color: #aaa;
-      }
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout Task</title>
+    <link href="../css-project/style.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  
+<body>
     
+    <main class="flex">
+      <div class="container">
+        <div id="navBox">
+          
+          <nav>
+            <h2>Emma Kirkpatrick</h2>
+            <ul>
+              <li><a href="../css-project/index.html">Home</a></li>
+              <li><a href="../css-project/gallery.html">Gallery</a></li> 
+            </ul>
+          </nav>
+        </div>
+        <h1 id="name">Emma Kirkpatrick</h1>
+        <img id="coverImg" src="../css-project/img/guitar-closeup-v3.jpg" alt="Close up of a guitar">
+      
+        
+      </div>
+        <!-- <article>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p>
+        </article> -->
+    
+    <section class="gallery" id="latest">
+      <ul>
+      <!-- <ul class="gallery" id="latestimg"> -->
+        <li> <h2 class="sectionTitles" id="latestWork">Latest Work</h2></li>
+        <li> <img src="../css-project/img/ben-over-table.jpg" alt="snowboarder jumping over table"> </li>
+        <li> <img src="../css-project/img/band.jpg" alt="band playing"></li>
+        <li> <img src="../css-project/img/keyboardist.jpg" alt="keyboardist playing"></li>
+        <li> <img src="../css-project/img/antelopeCanyon1.jpg" alt="red wavy rocks"> </li>
+        <li> <img src="../css-project/img/kirkwood.jpg" alt="snowy lake scene"> </li>
+        
+      </ul>
+      <!-- <button onclick = "displayMessage()"> about me </button> -->
+    </section>
+
+    <button onclick = "displayMessage()"><p id="buttonText">about me</p></button>
+    </main>
+    
+ 
+  
+        
+
     <script>
-        function displayMessage() {
-        
-            const body = document.body;
+      function displayMessage() {
+      
+          const body = document.body;
 
-            const panel = document.createElement('div');
-            panel.setAttribute('class','msgBox');
-            body.appendChild(panel);
+          const panel = document.createElement('div');
+          panel.setAttribute('class','msgBox');
+          body.appendChild(panel);
 
-            const msg = document.createElement('p');
-            msg.textContent = 'This is a message box';
-            panel.appendChild(msg);
+          const msg = document.createElement('img');
+          msg.src= '../css-project/img/about-me-buttonImg.jpg'
+          msg.setAttribute('class', 'msgBox')
+          // msg.textContent = 'This is a message box';
 
-            const closeBtn = document.createElement('button');
-            closeBtn.textContent = 'x';
-            panel.appendChild(closeBtn);
 
-            closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));
-        }
-    </script>
-        
-     <button onclick = "displayMessage()"> Display message box</button>
+          // msg.panel = document.createElement('panel')
+          // const msgImg = document.querySelector('img');
+          // msgImg.setAttribute('class', 'msgBox')
+          // msgImg.src = "../img/css-project/Headshot.jpg";
+
+          // body.appendChild(img)
+
     
-  </body>
-</html>
+          panel.appendChild(msg);
+
+          const closeBtn = document.createElement('button');
+          closeBtn.textContent = 'x';
+          msg.setAttribute('class', 'msgBox')
+          panel.appendChild(closeBtn);
+
+          closeBtn.addEventListener('click', () => panel.parentNode.removeChild(panel));
+      }
+  </script>    
+        
+</body>
