@@ -44,6 +44,18 @@ html {
     font-size: 25px;
     color: black;
   }
+
+  .answer-text {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: black;
+  }
+
+  #image {
+    max-width: 400px;
+    height: 300px;
+    /* left:50%;  */
+  }
   
   .controls {
     width: 100%;
