@@ -49,12 +49,15 @@ function raiseTime(data){
 }
 // problem 4
 function wfhFlag(data) {
-    data["wfh"] = false;
+    data.employees["wfh"] = false;
+    for (let i; i<4; i ++)
+    {
     if (data.employees.firstName == "Anna" || data.employees.firstName == "Sam")
     {
-        data["wfh"] == true
+        data.employees.wfh == true
     }
-    console.log(data.employees[1].wfh);
+}
+    console.log(data.employees.wfh);
 }
 
 let companyData;
@@ -65,7 +68,7 @@ let companyData;
         console.log(companyData)
         calculateTotalSalary(companyData);
         raiseTime(companyData);
-        wfh(companyData);
+        wfhFlag(companyData);
     });
     
 
