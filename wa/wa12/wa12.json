@@ -1,0 +1,40 @@
+{
+    "companyName": "Tech Stars",
+    "website": "www.techstars.com",
+    "employees":[
+        {
+            "firstName": "Sam",
+            "department": "Tech",
+            "position": "Manager",
+            "salary": "40000",
+            "raiseEligible": "true"
+        },
+
+        {
+            "firstName": "Mary",
+            "department": "Finance",
+            "position": "Trainee",
+            "salary": "18500",
+            "raiseEligible": "true"
+        },
+
+        {    
+            "firstName": "Bill",
+            "department": "HR",
+            "position": "Executive",
+            "salary": "21200",
+            "raiseEligible": "false"
+        },
+
+        {
+            "firstName": "Anna",
+            "department": "Tech",
+            "position": "Executive",
+            "salary": "25600",
+            "raiseEligible": "false"
+        }
+    ]
+}
+
+
+
