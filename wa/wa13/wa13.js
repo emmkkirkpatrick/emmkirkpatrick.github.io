@@ -30,6 +30,7 @@ function plus() {
 function random() {
     outputInt = randomNumber(0, 100);
     output.textContent = outputInt;
+    console.log(outputInt);
 }
 
 function randomNumber(min, max) {
@@ -38,7 +39,7 @@ function randomNumber(min, max) {
   }
 
 
-
+// need a class of output
 const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
 console.log(outputInt);
@@ -72,3 +73,27 @@ var sliderOutput = document.querySelector(".slider-output");
 function update() {
   sliderOutput.textContent = slider.value;
 }
+
+// generate random int based on mouse position
+var clickList = 0;
+function clickListUpdate () {
+    clickList ++;
+    console.log(clickList);
+}
+
+document.addEventListener("click", clickListUpdate);
+
+
+// function generateRandomNumber(event) {
+//     const x = event.clientX;
+//     const y = event.clientY;
+
+//     const randomNumber = Math.floor(Math.random() * (x + y));
+//     console.log(randomNumber);
+//   }
+  
+//   document.addEventListener("click", generateRandomNumber);
+
+// WORD SCRAMBLE
+// <h1> unscramble the word
+
