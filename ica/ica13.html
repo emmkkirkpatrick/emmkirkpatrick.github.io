@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Volume Changer</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        top: 30%;
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+
+      #textBox { 
+        width:50%;
+        /* height: 40%; */
+        position: absolute;
+        top:20%;
+      }
+
+      h1 {
+        font-size: 3.5em;
+        text-align:justify;
+        width: 90%;
+        background-color:rgb(66, 185, 224);
+        padding: 0.5em;
+        border: 0.2em solid black;
+      }
+
+      #description {
+        border: 0.2em solid black;
+        background-color: rgb(246, 222, 86);
+        padding:1em;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="textBox">
+        <h1>Guess What Number I am Thinking of to Change The Volume</h1>
+        <p id="description">We have selected a random number between 1 and 100. If you can guess what number I am thinking of in 7 tries, then you can pick your device's volume. </p>
+        <div class="form">
+    
+
+  <label for="guessField">Enter a guess: </label>
+  <input type="text" id="guessField" class="guessField">
+  <input type="submit" value="Submit guess" class="guessSubmit">
+</div>
+<div class="resultParas">
+  <p class="guesses"></p>
+  <p class="lastResult"></p>
+  <p class="lowOrHi"></p>
+</div>
+
+</body>
+
+<script>
+  let randomNumber = Math.floor(Math.random() * 100) + 1;
+  console.log(randomNumber);
+
+  const guesses = document.querySelector('.guesses');
+  const lastResult = document.querySelector('.lastResult');
+  const lowOrHi = document.querySelector('.lowOrHi');
+  const guessSubmit = document.querySelector('.guessSubmit');
+  const guessField = document.querySelector('.guessField');
+
+  let guessCount = 1;
+  let resetButton;
+
+  function checkGuess() {
+
+    const userGuess = Number(guessField.value);
+    if(guessCount === 1) {
+      guesses.textContent = 'Previous guesses: ';
+    }
+    guesses.textContent += userGuess + ' ';
+
+    if(userGuess === randomNumber) {
+      lastResult.textContent = 'Congratulations! You got it right! Enjoy your volume setting!';
+      lastResult.style.backgroundColor = 'green';
+      lowOrHi.textContent = '';
+      volumeChange();
+      setGameOver();
+    } else if(guessCount === 7) {
+      lastResult.textContent = '!!!GAME OVER!!!';
+      setGameOver();
+    } else {
+      lastResult.textContent = 'WRONG';
+      lastResult.style.backgroundColor = 'red';
+      if(userGuess < randomNumber) {
+        lowOrHi.textContent = 'TOO LOW!';
+      } else if(userGuess > randomNumber) {
+        lowOrHi.textContent = 'TOO HIGH!';
+      }
+    }
+
+    guessCount++;
+    guessField.value = '';
+    guessField.focus();
+  }
+  guessSubmit.addEventListener('click', checkGuess);
+
+  function setGameOver() {
+	  guessField.disabled = true;
+	  guessSubmit.disabled = true;
+	  resetButton = document.createElement('button');
+	  resetButton.textContent = 'Start new game';
+	  document.body.appendChild(resetButton);
+	  resetButton.addEventListener('click', resetGame);
+  }
+
+  function resetGame() {
+	  guessCount = 1;
+
+    const resetParas = document.querySelectorAll('.resultParas p');
+    for (const resetPara of resetParas) {
+      resetPara.textContent = '';
+    }
+	  resetButton.parentNode.removeChild(resetButton);
+
+	  guessField.disabled = false;
+	  guessSubmit.disabled = false;
+	  guessField.value = '';
+	  guessField.focus();
+
+	  lastResult.style.backgroundColor = 'white';
+
+	  randomNumber = Math.floor(Math.random() * 100) + 1;
+      console.log(randomNumber);
+  }
+
+  function volumeChange() {
+    const userInput = prompt("Congrats! You guessed it right! Please enter your desired volume:");
+    console.log(`Congrats! Your volume is now set to: ${userInput}!`);
+
+  }
+
+  function winner() {
+    lastResult.style.transform; 'scale(1.2)';
+  }
+</script>
+</html>
