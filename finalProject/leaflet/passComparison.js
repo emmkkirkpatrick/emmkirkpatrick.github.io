@@ -86,7 +86,7 @@ function createTable() {
         row.insertCell(0).innerHTML = tableData[s].passName
         row.insertCell(1).innerHTML = tableData[s].count;
         row.insertCell(2).innerHTML = tableData[s].skiableAcres;
-        row.insertCell(3).innerHTML = tableData[s].avgSnowfall;
+        row.insertCell(3).innerHTML = parseInt(tableData[s].avgSnowfall / tableData[s].count);
         row.insertCell(4).innerHTML = tableData[s].lifts;
         row.insertCell(5).innerHTML = tableData[s].runs;
         
