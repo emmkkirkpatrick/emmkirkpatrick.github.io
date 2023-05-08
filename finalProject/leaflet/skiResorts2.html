@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map of Ski Resorts in Colorado</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="style2.css">
+
+
+</head>
+<body>
+    <h1>A Map of the Colorado Ski Resorts</h1>
+    <div id="map"></div>
+    <aside>   
+        <div class="key" >
+            <h2>Key</h2>
+            <img src="images/icon-epic.png"><p>Epic Pass</p>
+            <img src="images/icon-ikon.png"><p>Ikon Pass</p>
+            <img src="images/icon-indy.png"><p>Indy Pass</p>
+            <img src="images/icon-independent.png"><p>Independent Mountain</p>
+        </div>
+    </aside>
+    <div id="info"><p>The size of the icon is scaled with the skiable acres for each resort. Click on any icon to learn more about individual Colorado ski resorts. </p></div>
+    <h2 id ="tableHeader">A side-by-side comparison of the Colorado ski resorts by season pass type. </h2>
+    <div id="tableContainer"> 
+            <script src="passComparison.js"></script>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script type = "text/javascript" src="data/coloradoSkiResorts.js" ></script>
+    <script type = "text/javascript" src="skiResorts2.js"></script>
+    
+</body>
+
+</html>
