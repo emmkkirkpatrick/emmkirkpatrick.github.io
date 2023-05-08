@@ -13,22 +13,22 @@ function addPopups(feature, layer) { //creates popups with site info
 
 
 window.onload=function(){
-    // let map = L.map('map').setView([38.888938, -105.889378], 10);
-    // var skiMap = L.tileLayer('mapbox://styles/emki2076/clhe0mkwa00f701r85uzbf2le?&access_token=pk.eyJ1IjoiZW1raTIwNzYiLCJhIjoiY2xndmNlamU3MmxzcjNnbHVybnpvbTNmcyJ9.pIbaPl0DX3kNYy3jeeNZ8w', {
-    //     maxZoom: 18, minZoom: 10,
-    //     attribution: '&copy; <a href=”https://www.mapbox.com/about/maps/”>Mapbox</a> &copy; <a href=”http://www.openstreetmap.org/copyright”>OpenStreetMap</a>',
-    // }).addTo(map);
+    let map = L.map('map').setView([38.888938, -105.889378], 10);
+    var skiMap = L.tileLayer('mapbox://styles/emki2076/clhe0mkwa00f701r85uzbf2le?&access_token=pk.eyJ1IjoiZW1raTIwNzYiLCJhIjoiY2xndmNlamU3MmxzcjNnbHVybnpvbTNmcyJ9.pIbaPl0DX3kNYy3jeeNZ8w', {
+        maxZoom: 18, minZoom: 10,
+        attribution: '&copy; <a href=”https://www.mapbox.com/about/maps/”>Mapbox</a> &copy; <a href=”http://www.openstreetmap.org/copyright”>OpenStreetMap</a>',
+    }).addTo(map);
     
-    let map = L.map('map').setView([-105.889378, 38.888938], 10);
+    // let map = L.map('map').setView([-105.889378, 38.888938], 10);
     
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZW1raTIwNzYiLCJhIjoiY2xndmNlamU3MmxzcjNnbHVybnpvbTNmcyJ9.pIbaPl0DX3kNYy3jeeNZ8w';
+    // mapboxgl.accessToken = 'pk.eyJ1IjoiZW1raTIwNzYiLCJhIjoiY2xndmNlamU3MmxzcjNnbHVybnpvbTNmcyJ9.pIbaPl0DX3kNYy3jeeNZ8w';
     
-    var skiMap = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/emki2076/clhe0mkwa00f701r85uzbf2le',
-      center: [-105.889378, 38.888938],
-      zoom: 10,
-    })
+    // var skiMap = new mapboxgl.Map({
+    //   container: 'map',
+    //   style: 'mapbox://styles/emki2076/clhe0mkwa00f701r85uzbf2le',
+    //   center: [-105.889378, 38.888938],
+    //   zoom: 10,
+    // })
     // .addTo(map);
 
     var pointLayerGroup = L.geoJSON(resortData, {

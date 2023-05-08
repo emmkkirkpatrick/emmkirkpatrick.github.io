@@ -1,0 +1,18 @@
+#map {
+    position:relative;
+    top:15%;
+    left: 5%;
+    height: 35rem;
+    width: 50rem;
+    margin:1em;
+    border: 2px solid gray;
+ 
+}
+
+h1 {
+    position: relative;
+    /* margin: 5rem auto; */
+    left:6%;
+    /* padding: 2em; */
+
+}
